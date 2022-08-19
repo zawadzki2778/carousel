@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   const images = document.querySelectorAll('.carousel__slide img');//получаем все картинки
   // счётчики 
   let counter = 0;
-  const stepSize = images[0].clientWidth;// узнаём размер области внутри рамок элемента[0],что бы получить шаг прокрутки 
+  const stepSize = images[2].clientWidth;// узнаём размер области внутри рамок элемента[0],что бы получить шаг прокрутки 
   console.log(stepSize);
 
   //записываем логику работы прокрутки 
@@ -19,6 +19,14 @@ window.addEventListener('load', () => {
     if (counter >= images.length - 1) counter = -1;
     slider.classList.add('transformAnimation');// добавили класс, прописанный в style.css
     counter++;
+    slider.style.transform = 'translateX(' + `${-stepSize * counter}px)`;
+  });
+  /// для левой стрелки
+  left.addEventListener('click', () => {
+    //
+    if (counter <= 0) counter = images.length;
+    slider.classList.add('transformAnimation');// добавили класс, прописанный в style.css
+    counter--;
     slider.style.transform = 'translateX(' + `${-stepSize * counter}px)`;
   });
 });

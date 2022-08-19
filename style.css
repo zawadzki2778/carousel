@@ -8,6 +8,7 @@
   width: 50%;
   margin-top: auto;
   border: 3px solid royalblue;
+  overflow: hidden;
 }
 
 .carousel__container img {
@@ -34,6 +35,7 @@
   border: 1px solid royalblue;
 }
 
-.transformAnimation { /*это класс добавляем через main.js*/ 
+.transformAnimation {
+  /*это класс добавляем через main.js*/
   transition: .4s all ease-in-out;
 }
