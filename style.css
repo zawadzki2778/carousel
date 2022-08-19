@@ -3,25 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .carousel__container {
   width: 50%;
   margin-top: auto;
   border: 3px solid royalblue;
 }
+
 .carousel__container img {
   display: block;
   width: 100%;
 }
+
 .carousel__slide {
   display: flex;
   height: 350px;
 }
+
+.btnWrapper {
+  margin-top: 10px;
+}
+
 .btn {
   padding: 30px 40px;
   border-radius: 50%;
   font-size: 30px;
-  background: tomato;
+  background: royalblue;
   cursor: pointer;
   outline: 0;
   border: 1px solid royalblue;
+}
+
+.transformAnimation { /*это класс добавляем через main.js*/ 
+  transition: .4s all ease-in-out;
 }
