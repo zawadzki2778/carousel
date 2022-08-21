@@ -2,11 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  margin-top: 50px;
 }
 
 .carousel__container {
   width: 50%;
-  margin-top: auto;
+  /* margin-top: 0 auto; */
   border: 3px solid royalblue;
   overflow: hidden;
 }
@@ -22,7 +28,8 @@
 }
 
 .btnWrapper {
-  margin-top: 10px;
+  margin-top: 15px;
+  position: relative;
 }
 
 .btn {
@@ -35,7 +42,12 @@
   border: 1px solid royalblue;
 }
 
+ .btn-right {
+  /* position: absolute; */
+  margin-left: 1000px;
+}
+
 .transformAnimation {
-  /*это класс добавляем через main.js*/
+  /*это класс подключаю через main.js*/
   transition: .4s all ease-in-out;
 }
