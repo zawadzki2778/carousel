@@ -3,34 +3,17 @@
   margin: 0;
   box-sizing: border-box;
   margin: 0 auto;
-  position: relative;
 }
 
 .carousel {
   margin-top: 50px;
-}
-
-.carousel__container {
-  width: 50%;
-  /* margin-top: 0 auto; */
-  border: 3px solid royalblue;
-  overflow: hidden;
-}
-
-.carousel__container img {
-  display: block;
-  width: 100%;
-}
-
-.carousel__slide {
-  display: flex;
-  height: 350px;
-}
-
-.btnWrapper {
-  margin-top: 15px;
   position: relative;
 }
+
+ /* .btn-right {
+  position: absolute;
+  margin-left: 1700px;
+} */
 
 .btn {
   padding: 30px 40px;
@@ -42,9 +25,22 @@
   border: 1px solid royalblue;
 }
 
- .btn-right {
-  /* position: absolute; */
-  margin-left: 1000px;
+.carousel__container {
+  width: 80%;
+  margin-top: 20px auto;
+  border: 3px solid royalblue;
+  overflow: hidden;
+}
+
+.carousel__container img {
+  display: block;
+  width: 100%;
+}
+
+.carousel__slide {
+  display: flex;
+  background: tomato;
+  height: 350px;
 }
 
 .transformAnimation {
