@@ -10,10 +10,34 @@
   position: relative;
 }
 
- /* .btn-right {
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 65px;
+}
+
+/* .btn-right {
   position: absolute;
   margin-left: 1700px;
 } */
+
+.carousel__container {
+  width: 50%;
+  margin-top: 20px auto;
+  border: 3px solid royalblue;
+  overflow: hidden;
+}
+
+.carousel__container img {
+  display: block;
+  /* width: 100%; */
+}
+
+.carousel__slide {
+  display: flex;
+  background: tomato;
+  height: auto;
+}
 
 .btn {
   padding: 30px 40px;
@@ -23,24 +47,6 @@
   cursor: pointer;
   outline: 0;
   border: 1px solid royalblue;
-}
-
-.carousel__container {
-  width: 80%;
-  margin-top: 20px auto;
-  border: 3px solid royalblue;
-  overflow: hidden;
-}
-
-.carousel__container img {
-  display: block;
-  width: 100%;
-}
-
-.carousel__slide {
-  display: flex;
-  background: tomato;
-  height: 350px;
 }
 
 .transformAnimation {

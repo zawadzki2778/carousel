@@ -14,10 +14,10 @@ function size() {
   width = document.querySelector('.carousel__container').offsetWidth;// узнаём ширину блока carousel__container
   console.log(width);
 
-  slider.style.width = width * images.length + 'px';
-  images.forEach(item => {
+  slider.style.width = width * images.length + 'px'; // присваиваем слайдеру значение равное его ширине умноженное на к-во картинок
+  images.forEach(item => {//делаем все изображения равные ширине слайдера, т.е. ставим их в рамку (border: 3px solid royalblue;)
     item.style.width = width + 'px';
-    item.style.width = 'auto'; //принудительно ставим высоту картинок авто 
+    // item.style.height = 'auto'; //принудительно ставим высоту картинок авто 
   });
   rollSlider();
 }
