@@ -29,9 +29,10 @@ p {
 }
 
 .btn {
+ 
   padding: 30px 40px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 100px;
   background: royalblue;
   cursor: pointer;
   outline: 0;
